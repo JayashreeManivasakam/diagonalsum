@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main_diagonal {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+       Scanner sc=new Scanner(System.in);
         System.out.println("Enter the row and column size:");
         int n=sc.nextInt();
         int  m=sc.nextInt();
@@ -15,17 +15,12 @@ public class Main_diagonal {
                     a[i][j] = sc.nextInt();
                 }
             }
-            for (int j = 0; j < n; j++) {
-                sum = 0;
-                for (int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i++) {
                     sum += a[i][i];
                 }
-            }
-            System.out.print(sum + " ");
+           System.out.print(sum + " ");
         }
-
-
-        else
+       else
             System.out.println("enter a valid array size");
     }
 }
